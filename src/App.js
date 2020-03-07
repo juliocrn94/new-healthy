@@ -4,7 +4,7 @@ import Description from "./components/Description";
 import Footer from './components/Footer';
 import './App.css';
 import Map from './components/Map';
-import Testimonios from "./componentes/Testimonios";
+import Testimonios from "./components/Testimonios";
 
 
 function App() {
