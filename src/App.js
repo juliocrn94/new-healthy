@@ -1,10 +1,14 @@
 import React from 'react';
-import './css/index.css';
-import Footer from './components/Footer'
+
+import './App.css';
+import "./css/index.css";
+import Description from "./components/Description";
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <Description/>
       <Footer />
     </div>
   );
