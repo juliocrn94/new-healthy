@@ -137,3 +137,26 @@ body {
 .Map-imagen figure img {
     width: 80%;
 }
+.imagenchicafit {
+border-radius: 50%;
+height:200px;
+
+
+
+}
+
+.imagenchicoquebajodepeso{
+  height:150px;  
+  border-radius: 50%;
+
+}
+
+.señorcondiabetes{
+    height:200px;  
+    border-radius: 60%;
+}
+
+.alineacion_testimonios{
+    display: flex;
+    flex-direction: row;
+}

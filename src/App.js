@@ -11,6 +11,7 @@ function App() {
       <Description/>
       <Footer />
      <Map /> 
+      <Testimonios />
     </div>
   );
 }
