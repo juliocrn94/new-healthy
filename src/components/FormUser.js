@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import bc1 from '../images/Asset 2.svg'
+import bc2 from '../images/Asset 3.svg'
+import bc3 from '../images/Asset 4.svg'
+
 
 import ButtonForm from './ButtonForm';
 
@@ -13,11 +17,13 @@ class Formuser extends Component {
             correo: '',
             hopping: 'a',
             ubicacion: 'p',
-            horario: '00:00'
+            horario: '00:00',
+            display: 1
         }
 
         this.handleMetaChange = this.handleMetaChange.bind(this)
         this.handleUbiChange = this.handleUbiChange.bind(this)
+        this.handleButton = this.handleButton.bind(this)
     }
 
     handleMetaChange(event) {
@@ -35,13 +41,22 @@ class Formuser extends Component {
             ubicacion: event.target.value
         })
     }
+    
+    handleButton(event) {
+        if (this.state.display <3 ) {
+        this.setState({
+            display: this.state.display + 1
+            }
+        )}
+    }
 
     
     render () {
         
         return (
             <div className="container">
-                <div className='form-wrapper'>
+                {this.state.display === 1 && 
+                    <div className='form-wrapper'>
                     <h1 className="form-title">Agenda Tu Cita</h1>
                     
                     <h2 className="label">Nombre</h2>
@@ -52,8 +67,10 @@ class Formuser extends Component {
                     
                     <h2 className="label">Correo</h2>
                     <input type="text" name='correo' onChange={this.handleMetaChange}></input>
-                </div>
-                <div className='form-wrapper'>
+                    </div>
+                }
+                {this.state.display === 2 &&
+                    <div className='form-wrapper'>
                     <h1 className="form-title">Dinos Tus Necesidades</h1>
                     <h2 className="label">¿Cual es tu Meta?</h2>
 
@@ -94,8 +111,23 @@ class Formuser extends Component {
                     <h2 className="label">Horario</h2>
                     <input type="text"></input>
                 </div>
-
-                <ButtonForm/>
+                }
+                <div>
+                    <div>
+                        {this.state.display === 1 &&
+                        <img src={bc1}></img>
+                        }
+                        {this.state.display === 2 &&
+                        <img src={bc2}></img>
+                        }
+                        {this.state.display === 3 &&
+                        <img src={bc3}></img>
+                        }
+                    </div>
+                    <div>
+                    </div>
+                    <ButtonForm onClick={this.handleButton}/>
+                </div>
             </div>
         )
     }
