@@ -8,9 +8,9 @@ import Map from './components/Map';
 function App() {
   return (
     <div className="App">
-      <Description/>
+      <Description/>git
+      <Map /> 
       <Footer />
-     <Map /> 
     </div>
   );
 }
