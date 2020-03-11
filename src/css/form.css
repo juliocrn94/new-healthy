@@ -1,0 +1,80 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px 15px 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0px -2px 34px 0px rgba(0,0,0,0.75);
+}
+
+.form-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.form-title {
+    align-self: center;
+}
+
+.label {
+    
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botton-wrapper {
+    width: 80%;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "anterior breadcrumb siguiente";
+}
+
+.alginer-right {
+    grid-area: siguiente;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.button {
+    width: 120px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
