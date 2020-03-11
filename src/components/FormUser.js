@@ -58,14 +58,14 @@ class Formuser extends Component {
                     <h2 className="label">¿Cual es tu Meta?</h2>
 
                     <div className="button-radio-container">
-                        <input id="a" className='button-radio' type="radio" name="hopping" value="a" checked={this.state.hopping=='a'} onChange={this.handleMetaChange} />
-                        <span class="checkmark"></span>
-
-                        <label for="a">Bajar de Peso</label>
+                        <label for="a">
+                            <input id="a" className='button-radio' type="radio" name="hopping" value="a" checked={this.state.hopping=='a'} onChange={this.handleMetaChange} />
+                            <span class="checkmark"></span>
+                            Bajar de Peso
+                        </label>
                     </div>
 
                     <div className="button-radio-container">
-
                         <label for="b">
                         <input id="b" className='button-radio' type="radio" name="hopping" value="b" checked={this.state.hopping=='b'} onChange={this.handleMetaChange}/>
                         <span class="checkmark"></span>
@@ -74,7 +74,6 @@ class Formuser extends Component {
                     </div>
                     
                     <div className="button-radio-container">
-
                         <label for="c">
                             <input id="c" className='button-radio' type="radio" name="hopping" value="c" checked={this.state.hopping=='c'} onChange={this.handleMetaChange}/>
                             <span class="checkmark"></span>
