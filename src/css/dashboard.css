@@ -1,7 +1,7 @@
 .dash-header {
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 15vh 15vh;
+    grid-template-rows: 15vh 10vh;
     grid-template-areas: 
     "pic nombre"
     "pic datos";
@@ -9,15 +9,15 @@
 
 .dash-pic-wrapper {
     grid-area: pic;
-    width: 200px;
-    height: 200px;
+    width: 12em;
+    height: 12em;
     border-radius: 50%;
     border: solid 4px black;
 }
 
 .dash-pic {
-    width: 200px;
-    height: 200px;
+    width: inherit;
+    height: inherit;
     border-radius: 50%;
 
     object-fit: cover;
@@ -47,9 +47,67 @@
 }
 
 .dash-data-wrapper {
+    margin: 0px 0px 0px 20px;
+    width: 100%;
+}
+
+.dash-data-wrapper2 {
     grid-area: datos;
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
-    grid-template-areas: ;
+    height: 100%;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "edad peso progreso"
+    "meta estatura progreso";
+
+}
+
+
+.dash-data {
+    width: 80%;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-data p {
+    margin: 0px 0px 0px 0px; 
+}
+
+.edad {
+    grid-area: edad;
+}
+.peso {
+    grid-area: peso;
+}
+.meta {
+    grid-area: meta;
+}
+.estatura {
+    grid-area: estatura;
+}
+.progreso {
+    width: 60%;
+    grid-area: progreso;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+
+.prog-container {
+    background-color: #01B200;
+    display: flex;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    align-items: center;
+}
+.prog-container p {
+    color: white;
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: bold;
 }

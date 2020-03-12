@@ -10,10 +10,12 @@ import Description from "./components/Description";
 import Footer from './components/Footer';
 import Formuser from './components/FormUser';
 import ProgressDashboard from './components/ProgressDashboard';
+import DashboardHeader from './components/DashboardHeader';
 
 function App() {
   return (
     <div className="App">
+      <DashboardHeader />
       <ProgressDashboard />
       <Formuser/>
       
