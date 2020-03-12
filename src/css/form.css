@@ -20,9 +20,6 @@
     align-self: center;
 }
 
-.label {
-    
-}
 
 input[type=text] {
     width: 100%;
@@ -43,12 +40,28 @@ input[type=text] {
     grid-template-areas: 
     "anterior breadcrumb siguiente";
 }
+.formFooter {
+    width: 80%;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "ant bc sig";
+}
 
-.alginer-right {
+.aliright {
     grid-area: siguiente;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+.alileft {
+    grid-area: anterior;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 
@@ -128,7 +141,7 @@ input[type=text] {
   
   /* Style the indicator (dot/circle) */
   .container .checkmark:after {
-       top: 9px;
+      top: 9px;
       left: 9px;
       width: 8px;
       height: 8px;
@@ -136,3 +149,12 @@ input[type=text] {
       background: white;
   }
   
+
+  .breadcrumbs {
+    grid-area: bc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+ 

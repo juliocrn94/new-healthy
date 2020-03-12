@@ -90,45 +90,45 @@ class Formuser extends Component {
                 }
                 {this.state.display === 2 &&
                     <div className='form-wrapper'>
-                    <h1 className="form-title">Dinos Tus Necesidades</h1>
-                    <h2 className="label">¿Cual es tu Meta?</h2>
+                        <h1 className="form-title">Dinos Tus Necesidades</h1>
+                        <h2 className="label">¿Cual es tu Meta?</h2>
 
-                    <div className="button-radio-container">
-                        <label for="a">
-                            <input id="a" className='button-radio' type="radio" name="hopping" value="a" checked={this.state.hopping=='a'} onChange={this.handleMetaChange} />
+                        <div className="button-radio-container">
+                            <label for="a">
+                                <input id="a" className='button-radio' type="radio" name="hopping" value="a" checked={this.state.hopping=='a'} onChange={this.handleMetaChange} />
+                                <span class="checkmark"></span>
+                                Bajar de Peso
+                            </label>
+                        </div>
+
+                        <div className="button-radio-container">
+                            <label for="b">
+                            <input id="b" className='button-radio' type="radio" name="hopping" value="b" checked={this.state.hopping=='b'} onChange={this.handleMetaChange}/>
                             <span class="checkmark"></span>
-                            Bajar de Peso
-                        </label>
-                    </div>
-
-                    <div className="button-radio-container">
-                        <label for="b">
-                        <input id="b" className='button-radio' type="radio" name="hopping" value="b" checked={this.state.hopping=='b'} onChange={this.handleMetaChange}/>
-                        <span class="checkmark"></span>
-                            Ganar Musculo
-                        </label>
-                    </div>
+                                Ganar Musculo
+                            </label>
+                        </div>
                     
-                    <div className="button-radio-container">
-                        <label for="c">
-                            <input id="c" className='button-radio' type="radio" name="hopping" value="c" checked={this.state.hopping=='c'} onChange={this.handleMetaChange}/>
-                            <span class="checkmark"></span>
+                        <div className="button-radio-container">
+                            <label for="c">
+                                <input id="c" className='button-radio' type="radio" name="hopping" value="c" checked={this.state.hopping=='c'} onChange={this.handleMetaChange}/>
+                                <span class="checkmark"></span>
+                                
+                                Mantenerme en Forma
                             
-                            Mantenerme en Forma
-                        
-                        </label>
-                    </div>
+                            </label>
+                        </div>
 	
-                    <h2 className="label">Ubicación</h2>
+                        <h2 className="label">Ubicación</h2>
                     
-                    <select value={this.state.value} onChange={this.handleUbiChange}>
-                        <option value="p">Polanco</option>
-                        <option value="s">Santa Fe</option>
-                        <option value="c">Condesa</option>
-                    </select>
+                        <select value={this.state.value} onChange={this.handleUbiChange}>
+                            <option value="p">Polanco</option>
+                            <option value="s">Santa Fe</option>
+                            <option value="c">Condesa</option>
+                        </select>
                     
-                    <h2 className="label">Horario</h2>
-                    <input type="text"></input>
+                        <h2 className="label">Horario</h2>
+                        <input type="text"></input>
                 </div>
                 }
                 {this.state.display === 3 &&
@@ -160,33 +160,33 @@ class Formuser extends Component {
                     </div>
                 }
                 {this.state.display === 4 &&
-                <div>
-                    <h1 className="form-title">¡Listo!</h1>
-                    <h2 className="label">Tu cita ha sido agendada</h2>
-                    <h2 className="label">Te hemos enviado un correo de confirmación, por favor revisa tu bandeja de entrada.</h2>
-                </div>
+                    <div>
+                        <h1 className="form-title">¡Listo!</h1>
+                        <h2 className="label">Tu cita ha sido agendada</h2>
+                        <h2 className="label">Te hemos enviado un correo de confirmación, por favor revisa tu bandeja de entrada.</h2>
+                    </div>
                 }
-                <div>
-                    <div>
+                
+                    <div className="formFooter">
                         {this.state.display >= 2 && this.state.display <4 &&
-                        <ButtonForm onClick={this.handleButtonAnterior} text= "Anterior" />
+                        <ButtonForm aligner="alileft" onClick={this.handleButtonAnterior} text= "Anterior" />
                         }
+                        <div className="breadcrumbs">
+                            {this.state.display === 1 &&
+                            <img src={bc1} className="bcs" />
+                            }
+                            {this.state.display === 2 &&
+                            <img src={bc2} className="bcs"/>
+                            }
+                            {this.state.display === 3 &&
+                            <img src={bc3} className="bcs"/>
+                            }
+                        </div>
+                        <div>
+                        <ButtonForm aligner="aliright" onClick={this.handleButton} text={this.state.textBtn} />
+                        </div>
                     </div>
-                    <div>
-                        {this.state.display === 1 &&
-                        <img src={bc1} />
-                        }
-                        {this.state.display === 2 &&
-                        <img src={bc2} />
-                        }
-                        {this.state.display === 3 &&
-                        <img src={bc3} />
-                        }
-                    </div>
-                    <div>
-                    <ButtonForm onClick={this.handleButton} text={this.state.textBtn} />
-                    </div>
-                </div>
+                
             </div>
         )
     }
