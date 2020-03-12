@@ -8,22 +8,30 @@ import ButtonForm from './ButtonForm';
 
 import '../css/form.css';
 
+
 class Formuser extends Component {
     constructor (props) {
         super(props)
         this.state = {
+            textBtn: 'Siguiente',
             nombre: '',
             telefono: '',
             correo: '',
             hopping: 'a',
             ubicacion: 'p',
             horario: '00:00',
+            tarjetaNombre:'',
+            tarjetaApellidos:'',
+            tarjetaNum: '',
+            tarjetaFecha: '',
+            tarjetaCvv: '',
             display: 1
         }
 
         this.handleMetaChange = this.handleMetaChange.bind(this)
         this.handleUbiChange = this.handleUbiChange.bind(this)
         this.handleButton = this.handleButton.bind(this)
+        this.handleButtonAnterior = this.handleButtonAnterior.bind(this)
     }
 
     handleMetaChange(event) {
@@ -43,11 +51,22 @@ class Formuser extends Component {
     }
     
     handleButton(event) {
-        if (this.state.display <4 ) {
         this.setState({
             display: this.state.display + 1
             }
-        )}
+        )
+        if (this.state.display >= 3 ) {
+            this.setState({
+                textBtn: 'Finalizar' 
+            })
+        } 
+    }
+    handleButtonAnterior(event) {
+        this.setState({
+            display: this.state.display - 1
+            }
+        )
+        console.log("anterior")
     }
 
     
@@ -117,45 +136,56 @@ class Formuser extends Component {
                         <h1 className="form-title">Ya Casi Terminamos</h1>
                         
                         <h2 className="label">Solo necesitamos un método de pago</h2>
-                        
+
                         <div>
                         <h2 className="label">Nombre</h2>
-                        <input type="text" name='tarjeta-nombre' onChange={this.handleMetaChange}></input>
+                        <input type="text" name='tarjetaNombre' onChange={this.handleMetaChange}></input>
                         <h2 className="label">Apellidos</h2>
-                        <input type="text" name='tarjeta-apellidos' onChange={this.handleMetaChange}></input>
+                        <input type="text" name='tarjetaApellidos' onChange={this.handleMetaChange}></input>
                         </div>
 
                         <h2 className="label">Número de tarjeta</h2>
-                        <input type="text" name='tarjeta-numero' onChange={this.handleMetaChange}></input>
+                        <input type="text" name='tarjetaNum' onChange={this.handleMetaChange}></input>
 
                         <div>
                             <div>
                             <h2 className="label">Fecha de caducidad</h2>
-                            <input type="text" name='tarjeta-caducidad' onChange={this.handleMetaChange}></input>
+                            <input type="text" name='tarjetaFecha' onChange={this.handleMetaChange}></input>
                             </div>
                             <div>
                             <h2 className="label">CVV</h2>
-                            <input type="text" name='tarjeta-cvv' onChange={this.handleMetaChange}></input>
+                            <input type="text" name='tarjetaCvv' onChange={this.handleMetaChange}></input>
                             </div>                    
                         </div>
                     </div>
-
+                }
+                {this.state.display === 4 &&
+                <div>
+                    <h1 className="form-title">¡Listo!</h1>
+                    <h2 className="label">Tu cita ha sido agendada</h2>
+                    <h2 className="label">Te hemos enviado un correo de confirmación, por favor revisa tu bandeja de entrada.</h2>
+                </div>
                 }
                 <div>
                     <div>
-                        {this.state.display === 1 &&
-                        <img src={bc1}></img>
-                        }
-                        {this.state.display === 2 &&
-                        <img src={bc2}></img>
-                        }
-                        {this.state.display === 3 &&
-                        <img src={bc3}></img>
+                        {this.state.display >= 2 && this.state.display <4 &&
+                        <ButtonForm onClick={this.handleButtonAnterior} text= "Anterior" />
                         }
                     </div>
                     <div>
+                        {this.state.display === 1 &&
+                        <img src={bc1} />
+                        }
+                        {this.state.display === 2 &&
+                        <img src={bc2} />
+                        }
+                        {this.state.display === 3 &&
+                        <img src={bc3} />
+                        }
                     </div>
-                    <ButtonForm onClick={this.handleButton}/>
+                    <div>
+                    <ButtonForm onClick={this.handleButton} text={this.state.textBtn} />
+                    </div>
                 </div>
             </div>
         )

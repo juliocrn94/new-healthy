@@ -4,7 +4,7 @@ const ButtonForm = props => {
     return (
         <div className="botton-wrapper">
             <div className="alginer-right">
-                <button className="button button1" onClick= {props.onClick}>Siguiente</button>
+                <button className="button button1" onClick= {props.onClick}>{props.text}</button>
             </div>
         </div>
     );
