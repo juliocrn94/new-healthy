@@ -32,13 +32,12 @@ input[type=text] {
 }
 
 .botton-wrapper {
+    grid-area: sig;
     width: 80%;
     margin: 35px auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50px;
-    grid-template-areas: 
-    "anterior breadcrumb siguiente";
 }
 .formFooter {
     width: 80%;
@@ -51,13 +50,13 @@ input[type=text] {
 }
 
 .aliright {
-    grid-area: siguiente;
+    grid-area: sig;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 .alileft {
-    grid-area: anterior;
+    grid-area: ant;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -150,9 +149,10 @@ input[type=text] {
   }
   
 
-  .breadcrumbs {
+  .bcs {
     grid-area: bc;
     display: flex;
+    width: 150px;
     flex-direction: row;
     align-items: center;
   }
