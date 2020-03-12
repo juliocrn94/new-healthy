@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import '../css/dashboard.css';
 
-import prof_pic from '../images/user_test.png';
+import DashboardHeader from './DashboardHeader';
+import DashoardPlot from './DashboardPlot';
 
 class ProgressDashboard extends Component {
     render () {
         return (
-            <div>
-                
+            <div className="container">
+                <DashboardHeader />
+                <DashoardPlot />
             </div>
         )
     }

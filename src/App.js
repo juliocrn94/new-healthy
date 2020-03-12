@@ -15,10 +15,8 @@ import DashboardHeader from './components/DashboardHeader';
 function App() {
   return (
     <div className="App">
-      <DashboardHeader />
       <ProgressDashboard />
       <Formuser/>
-      
       <Description/>
       <Map /> 
       <Footer />
