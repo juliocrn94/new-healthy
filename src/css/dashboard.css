@@ -48,4 +48,8 @@
 
 .dash-data-wrapper {
     grid-area: datos;
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas: ;
 }

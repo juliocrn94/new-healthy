@@ -12,8 +12,8 @@ class ProgressDashboard extends Component {
                         <img className='dash-pic' src={prof_pic} />
                     </div>
                     <div className='dash-nombre-wrapper'>
-                        <h1 className='dash-nombre'>Julio Cesar Renteria Navarro</h1>
-                        <p className='dash-info'>Tel: 55 4444 4444</p>
+                        <h1 className='dash-nombre'>Mario Benito de Bross</h1>
+                        <p className='dash-info'>Tel: xx xx xxx xxx </p>
                     </div>
                     <div className='dash-data-wrapper'>
                         <h2>data data data</h2>
