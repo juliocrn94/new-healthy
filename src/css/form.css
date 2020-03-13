@@ -1,0 +1,137 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px 15px 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0px -2px 34px 0px rgba(0,0,0,0.75);
+}
+
+.form-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.form-title {
+    align-self: center;
+}
+
+.label {
+    
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botton-wrapper {
+    width: 80%;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "anterior breadcrumb siguiente";
+}
+
+.alginer-right {
+    grid-area: siguiente;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.button {
+    width: 120px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.button-radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.button-radio:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .button-radio:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }

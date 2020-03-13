@@ -1,0 +1,191 @@
+.dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 450px 500px;
+    grid-template-areas: 
+    "header"
+    "plot"
+    "plan";
+}
+
+.dash-header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 15vh 10vh;
+    grid-template-areas: 
+    "pic nombre"
+    "pic datos";
+}
+
+.dash-pic-wrapper {
+    grid-area: pic;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    border: solid 4px black;
+}
+
+.dash-pic {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: center ;
+}
+
+.dash-nombre-wrapper {
+    grid-area: nombre;
+    width: ;
+    display: flex;
+    margin: 0px 20px 10px 20px;
+    border-bottom: solid 2px black;
+    padding: 0px 0px 5px 0px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.dash-nombre {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.dash-info {
+    margin: 0;
+    font-size: 1em;
+}
+
+.dash-data-wrapper {
+    margin: 0px 0px 0px 20px;
+    width: 100%;
+}
+
+.dash-data-wrapper2 {
+    grid-area: datos;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "edad peso progreso"
+    "meta estatura progreso";
+
+}
+
+.plot-wrapper {
+    grid-area: plot;
+    height: 450px;
+    width: 100%;
+}
+
+.dash-data {
+    width: 80%;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-data p {
+    margin: 0px 0px 0px 0px; 
+}
+
+.edad {
+    grid-area: edad;
+}
+.peso {
+    grid-area: peso;
+}
+.meta {
+    grid-area: meta;
+}
+.estatura {
+    grid-area: estatura;
+}
+.progreso {
+    width: 60%;
+    grid-area: progreso;
+    justify-content: space-evenly;
+    display: flex;
+    margin-left: 10px;
+}
+
+.prog-container {
+    background-color: #01B200;
+    display: flex;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    align-items: center;
+}
+.prog-container p {
+    color: white;
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.plot-wrapper2 {
+    margin: 10px;
+    width: inherit;
+}
+
+.plot-wrapper2 iframe {
+    width: 96%;
+}
+
+.plot-select {
+    display: grid;
+    margin: 20px 20px 0px 20px;
+    padding: 1em 1em 0em 1em;
+    border-top: solid 1px black;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 5vh;
+    grid-template-areas: 
+    "peso contornos grasa";
+}
+
+.plot-pos-1 {
+    grid-area: peso;
+}
+
+.plot-pos-2 {
+    grid-area: contornos;
+}
+
+.plot-pos-3 {
+    grid-area: grasa;
+}
+
+.plot-button button {
+    outline: none;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    font-size: 1.2em;
+}
+
+.plan-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.plan-table th, .plan-table td {
+    text-align: left;
+    padding: 8px;
+    width: 16.66%;
+  }
+  
+.plan-table tr:nth-child(even){background-color: #f2f2f2}
+  
+.plan-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.plan-wrapper {
+    margin: 20px;
+}
