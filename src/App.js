@@ -4,6 +4,9 @@ import Description from "./components/Description";
 import Footer from './components/Footer';
 import './App.css';
 import Map from './components/Map';
+import Testimonios from "./components/Testimonios";
+import { findByLabelText } from '@testing-library/react';
+
 
 function App() {
   return (
@@ -11,8 +14,15 @@ function App() {
       <Description/>
       <Footer />
      <Map /> 
+      <Testimonios />
     </div>
   );
 }
+
+
+
+
+
+
 
 export default App;

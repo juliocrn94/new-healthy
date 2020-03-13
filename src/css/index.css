@@ -137,3 +137,45 @@ body {
 .Map-imagen figure img {
     width: 80%;
 }
+.imagenchicafit {
+    width:150px;
+    border-radius:20px;
+    box-shadow: 1px -5px 12px 3px rgba(209,209,209,0.91);
+}
+
+.chicoquebajodepeso{
+    width:150px;
+    border-radius: 20px;
+    box-shadow: 1px -5px 12px 3px rgba(209,209,209,0.91);
+}
+
+.Hacerdecomer{
+    width:150px;
+    border-radius: 20px;
+    box-shadow: 1px -5px 12px 3px rgba(209,209,209,0.91);
+}
+
+.alineacion_testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.barratestimonios{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.opinions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
