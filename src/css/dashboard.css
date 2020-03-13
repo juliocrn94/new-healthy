@@ -1,7 +1,7 @@
 .dashboard-wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 450px 500px;
+    grid-template-rows: 200px 450px 1200px;
     grid-template-areas: 
     "header"
     "plot"
@@ -171,7 +171,7 @@
 .plan-table {
     border-collapse: collapse;
     width: 100%;
-  }
+}
   
 .plan-table th, .plan-table td {
     text-align: left;
