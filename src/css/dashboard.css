@@ -171,10 +171,6 @@
 .plan-table {
     border-collapse: collapse;
     width: 100%;
-<<<<<<< HEAD
-=======
-    border-radius: 5px;
->>>>>>> a0310a4fbbfefaf8a4d02fc0faacb68f1cca3012
 }
   
 .plan-table th, .plan-table td {
