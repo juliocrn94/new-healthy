@@ -4,7 +4,7 @@ import Button from './Button';
 import Plot from './Plot';
 
 
-class DashoardPlot extends Component {
+class DashboardPlot extends Component {
 
     constructor (props) {
         super(props)
@@ -38,4 +38,4 @@ class DashoardPlot extends Component {
     }
 }
 
-export default DashoardPlot
+export default DashboardPlot

@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import '../css/dashboard.css';
 
 import DashboardHeader from './DashboardHeader';
-import DashoardPlot from './DashboardPlot';
+import DashboardPlot from './DashboardPlot';
+import DashboardPlan from './DashboardPlan';
 
 class ProgressDashboard extends Component {
     render () {
@@ -10,7 +11,8 @@ class ProgressDashboard extends Component {
             <div className="container ">
                 <div className="dashboard-wrapper">
                     <DashboardHeader />
-                    <DashoardPlot class="plot-wrapper"/>
+                    <DashboardPlot class="plot-wrapper"/>
+                    <DashboardPlan />
                 </div>
             </div>
         )
