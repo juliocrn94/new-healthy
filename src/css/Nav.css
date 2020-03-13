@@ -1,0 +1,37 @@
+ol, ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    height: 100px;
+    border-bottom: 2px solid grey;
+}
+
+nav {
+    display: flex;
+    height: inherit;
+    margin-right: 50px;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    display: flex;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0px 20px;
+}
