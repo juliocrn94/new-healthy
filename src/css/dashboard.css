@@ -171,7 +171,6 @@
 .plan-table {
     border-collapse: collapse;
     width: 100%;
-    border-radius: 5px;
 }
   
 .plan-table th, .plan-table td {
