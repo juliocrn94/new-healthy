@@ -7,9 +7,11 @@ import DashoardPlot from './DashboardPlot';
 class ProgressDashboard extends Component {
     render () {
         return (
-            <div className="container">
-                <DashboardHeader />
-                <DashoardPlot />
+            <div className="container ">
+                <div className="dashboard-wrapper">
+                    <DashboardHeader />
+                    <DashoardPlot class="plot-wrapper"/>
+                </div>
             </div>
         )
     }

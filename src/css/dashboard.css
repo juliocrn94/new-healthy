@@ -1,3 +1,13 @@
+.dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 450px 500px;
+    grid-template-areas: 
+    "header"
+    "plot"
+    "plan";
+}
+
 .dash-header {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -63,6 +73,11 @@
 
 }
 
+.plot-wrapper {
+    grid-area: plot;
+    height: 450px;
+    width: 100%;
+}
 
 .dash-data {
     width: 80%;
@@ -113,14 +128,19 @@
 }
 
 
-.plot-wrapper {
+.plot-wrapper2 {
     margin: 10px;
+    width: inherit;
+}
+
+.plot-wrapper2 iframe {
+    width: 96%;
 }
 
 .plot-select {
     display: grid;
     margin: 20px 20px 0px 20px;
-    padding: 1em;
+    padding: 1em 1em 0em 1em;
     border-top: solid 1px black;
     grid-template-columns: 33% 34% 33%;
     grid-template-rows: 5vh;
@@ -141,6 +161,7 @@
 }
 
 .plot-button button {
+    outline: none;
     margin: auto;
     width: 50%;
     height: 100%;

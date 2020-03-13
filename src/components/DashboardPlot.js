@@ -23,7 +23,7 @@ class DashoardPlot extends Component {
 
     render () {
         return (
-            <div>
+            <div className={this.props.class}>
                 <div className='plot-select'>
                     <Button posicion='plot-button plot-pos-1' value='Peso' text="Peso" onClick={this.handleButton} />
                     <Button posicion='plot-button plot-pos-2' value='Contornos' text="Contornos" onClick={this.handleButton}/>
