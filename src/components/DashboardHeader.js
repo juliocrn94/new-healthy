@@ -12,7 +12,7 @@ class DashboardHeader extends Component {
                 </div>
                 <div className='dash-nombre-wrapper'>
                     <h1 className='dash-nombre'>Mario Benito de Bross</h1>
-                    <p className='dash-info'>Tel: xx xx xxx xxx </p>
+                    <p className='dash-info'>Tel: xx xxxx xxxx </p>
                 </div>
                 <div className='dash-data-wrapper'>
                     <div className="dash-data-wrapper2">

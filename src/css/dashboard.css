@@ -111,3 +111,39 @@
     font-size: 1.5em;
     font-weight: bold;
 }
+
+
+.plot-wrapper {
+    margin: 10px;
+}
+
+.plot-select {
+    display: grid;
+    margin: 20px 20px 0px 20px;
+    padding: 1em;
+    border-top: solid 1px black;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 5vh;
+    grid-template-areas: 
+    "peso contornos grasa";
+}
+
+.plot-pos-1 {
+    grid-area: peso;
+}
+
+.plot-pos-2 {
+    grid-area: contornos;
+}
+
+.plot-pos-3 {
+    grid-area: grasa;
+}
+
+.plot-button button {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    font-size: 1.2em;
+}
+
