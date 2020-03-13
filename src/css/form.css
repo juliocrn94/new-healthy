@@ -1,5 +1,6 @@
 .container {
     width: 80%;
+    height: 700px;
     margin: auto;
     padding: 30px 15px 30px 15px;
     border-radius: 10px;
@@ -21,7 +22,63 @@
 }
 
 
-input[type=text] {
+.container input[type= text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container input[type= tel ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type= date ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type= time ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type= month ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type= password ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -41,6 +98,7 @@ input[type=text] {
 }
 .formFooter {
     width: 80%;
+    padding: 12px 20px;
     margin: 35px auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -49,14 +107,25 @@ input[type=text] {
     "ant bc sig";
 }
 
-.aliright {
+.boton-disabled {
+    grid-area: ant;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    visibility: hidden;
+}
+
+.boton-sig {
     grid-area: sig;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-.alileft {
+.boton-ant {
     grid-area: ant;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -83,6 +152,7 @@ input[type=text] {
   .button1 {
     background-color: white; 
     color: black; 
+    height: 100%;
     border: 2px solid #4CAF50;
   }
   
@@ -108,6 +178,34 @@ input[type=text] {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+}
+
+.ubi-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hor-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nombre-tarj {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fecha-cvv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.radio-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Create a custom radio button */
@@ -149,7 +247,21 @@ input[type=text] {
   }
   
 
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .bcs {
+    grid-area: bc;
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bcs-finales {
     grid-area: bc;
     display: flex;
     width: 150px;
