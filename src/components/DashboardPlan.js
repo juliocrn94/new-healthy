@@ -16,7 +16,7 @@ const DashboardPlan = (props) => {
                 </thead>
                 <tr>
                 <td>Lunes</td>
-                <td>1 Yogurt</td>
+                <td>1 Yogurt con Ceral</td>
                 <td>1 Fruta Fresca</td>
                 <td>1 Porcion de Carne Roja</td>
                 <td>1 Cafe con Leche</td>

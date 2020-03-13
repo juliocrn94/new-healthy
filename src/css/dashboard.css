@@ -176,6 +176,7 @@
 .plan-table th, .plan-table td {
     text-align: left;
     padding: 8px;
+    width: 16.66%;
   }
   
 .plan-table tr:nth-child(even){background-color: #f2f2f2}
