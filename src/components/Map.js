@@ -74,7 +74,7 @@ class Map extends Component {
                         }
                         {
                             this.state.ubicacion ==="c" && 
-                            <p> Dirección: enfrente de parque méxico</p>
+                            <p> Dirección: enfrente de Parque México</p>
                         }
                 </div>
             </div>

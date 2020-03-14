@@ -1,5 +1,6 @@
 .container {
     width: 80%;
+    height: 1000px;
     margin: auto;
     padding: 30px 15px 30px 15px;
     border-radius: 10px;
@@ -21,10 +22,85 @@
 }
 
 .label {
-    
+    align-items: left;
+    margin-right: 50px;
+    text-align: left;
 }
 
-input[type=text] {
+.container input[type= text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100%;
+}
+.container input[type= text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container .tarj-nom {
+    margin-left: 25px;
+}
+
+.container input[type= tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type= date ] {
+    padding: 12px 20px;
+    margin: 8px;
+    margin-right: 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type= time ] {
+    padding: 12px 20px;
+    margin: 8px;
+    margin-right: 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container input[type= month ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type= password ] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -35,20 +111,49 @@ input[type=text] {
 }
 
 .botton-wrapper {
+    grid-area: sig;
     width: 80%;
     margin: 35px auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50px;
+}
+.formFooter {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px;
     grid-template-areas: 
-    "anterior breadcrumb siguiente";
+    "ant bc sig";
+    position: relative;
+    bottom: 15px;
 }
 
-.alginer-right {
-    grid-area: siguiente;
+.boton-disabled {
+    grid-area: ant;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    visibility: hidden;
+}
+
+.boton-sig {
+    grid-area: sig;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.boton-ant {
+    grid-area: ant;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 
@@ -71,6 +176,7 @@ input[type=text] {
   .button1 {
     background-color: white; 
     color: black; 
+    height: 100%;
     border: 2px solid #4CAF50;
   }
   
@@ -96,6 +202,53 @@ input[type=text] {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+}
+
+.ubi-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hor-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: left;
+    grid-template-areas: 
+    "day hora leg";
+}
+
+.nombre-tarj {
+    display: flex;
+    
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+}
+.numero-tarj {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+.fecha-cvv {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+}
+.radio-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 /* Create a custom radio button */
@@ -128,10 +281,35 @@ input[type=text] {
   
   /* Style the indicator (dot/circle) */
   .container .checkmark:after {
-       top: 9px;
+      top: 9px;
       left: 9px;
       width: 8px;
       height: 8px;
       border-radius: 50%;
       background: white;
   }
+  
+
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bcs {
+    grid-area: bc;
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bcs-finales {
+    grid-area: bc;
+    display: flex;
+    width: 150px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+ 
