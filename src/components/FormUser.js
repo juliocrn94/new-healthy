@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import Map from './Map';
-import bc1 from '../images/Asset 2.svg'
-import bc2 from '../images/Asset 3.svg'
-import bc3 from '../images/Asset 4.svg'
-import MapaPolanco from '../images/Polanco.PNG'
-import MapaCondesa from '../images/Condesa.png'
-import MapaSantafe from '../images/SantaFe.png'
+import React, { Component } from 'react';
+import {withRouter} from 'react-router';
+import bc1 from '../images/Asset 2.svg';
+import bc2 from '../images/Asset 3.svg';
+import bc3 from '../images/Asset 4.svg';
+import MapaPolanco from '../images/Polanco.PNG';
+import MapaCondesa from '../images/Condesa.png';
+import MapaSantafe from '../images/SantaFe.png';
 
 
 
@@ -15,6 +15,7 @@ import '../css/form.css';
 
 
 class Formuser extends Component {
+
     constructor (props) {
         super(props)
         this.state = {
@@ -32,14 +33,15 @@ class Formuser extends Component {
             tarjetaCvv: '',
             display: 1
         }
-
+        
         this.handleMetaChange = this.handleMetaChange.bind(this)
         this.handleUbiChange = this.handleUbiChange.bind(this)
         this.handleButton = this.handleButton.bind(this)
         this.handleButtonAnterior = this.handleButtonAnterior.bind(this)
         this.handleButtonFinalizar = this.handleButtonFinalizar.bind(this)
     }
-
+    
+    
     handleMetaChange(event) {
         const target = event.target;
         const value = target.value;
@@ -73,6 +75,8 @@ class Formuser extends Component {
             }
         )
     }
+
+
     handleButtonFinalizar(event) {
         this.setState({
             nombre: '',
@@ -87,8 +91,9 @@ class Formuser extends Component {
             tarjetaFecha: '',
             tarjetaCvv: '',
             display: 1
-            }
-        )
+        }
+        );
+       this.props.history.push("/")
     }
 
     
@@ -221,7 +226,7 @@ class Formuser extends Component {
                     </div>
                 }
                 {this.state.display === 4 &&
-                    <div>
+                    <div className= "confirma-wrapper">
                         <h1 className="form-title">¡Listo!</h1>
                         <h2 className="label">Tu cita ha sido agendada</h2>
                         <h2 className="label">Te hemos enviado un correo de confirmación, por favor revisa tu bandeja de entrada.</h2>

@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react';
+import Formuser from './FormUser';
+import Footer from './Footer';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
-class Registro extends Component {
-    render () {
-        return (
-            <div>
-                <p> hola mundo!</p>
-            </div>
-        )
-    }
+
+function Registro() {
+  return (
+    <div>
+      <Formuser />
+      <Footer />
+    </div>
+  );
 }
 
-export default Registro
+export default Registro;
