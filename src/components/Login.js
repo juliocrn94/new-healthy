@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import { validate } from 'json-schema'
 import {Link} from 'react-router-dom';
@@ -55,12 +56,16 @@ class Login extends Component {
         }
             return true
     }
+
     confirmarcontrasena(){
         const usuarioCorrecto = "Usuario"
         const contraseñaCorrecta = "1234"
         if (this.state.usuario === usuarioCorrecto && this.state.contrasena === contraseñaCorrecta) {
             console.log ("éxito!")
+            this.props.usuarioCorrecto(true)
         }
+
+
     }
     render () {
 

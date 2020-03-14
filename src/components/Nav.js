@@ -10,12 +10,19 @@ const Nav = () => {
         <div id="relleno"></div>
         <nav className="menu">
             <ol>
- 
+                    
+                    <Link to='/'>
                     <li> <a href="">Nosotros</a> </li>
+                    </Link>
 
+                    <Link to='/AgendatuCita'>
                     <li> <a href="">Agenda tu cita</a> </li>
+                    </Link>
 
+                    <Link to='/Login'>
                     <li> <a href="">Inicia sesión</a> </li>
+                    </Link>
+
 
                     
             </ol>
