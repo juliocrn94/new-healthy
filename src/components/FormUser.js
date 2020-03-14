@@ -99,16 +99,16 @@ class Formuser extends Component {
                 {/* form de info usuario*/}
                 {this.state.display === 1 && 
                     <div className='form-wrapper'>
-                    <h1 className="form-title">Agenda Tu Cita</h1>
-                    
-                    <h2 className="label">Nombre</h2>
-                    <input type="text" name='nombre' onChange={this.handleMetaChange}></input>
+                        <h1 className="form-title">Agenda Tu Cita</h1>
+                        
+                        <h2 className="label">Nombre</h2>
+                        <input type="text" name='nombre' onChange={this.handleMetaChange}></input>
 
-                    <h2 className="label">Telefono</h2>
-                    <input type="tel" name='telefono' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onChange={this.handleMetaChange} ></input>
-                    
-                    <h2 className="label">Correo</h2>
-                    <input type="text" name='correo' onChange={this.handleMetaChange}></input>
+                        <h2 className="label">Telefono</h2>
+                        <input type="tel" name='telefono' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onChange={this.handleMetaChange} ></input>
+                        
+                        <h2 className="label">Correo</h2>
+                        <input type="text" name='correo' onChange={this.handleMetaChange}></input>
                     </div>
                 }
                 {/* form de info */}
@@ -199,15 +199,15 @@ class Formuser extends Component {
                         <h2 className="label">Solo necesitamos un método de pago</h2>
 
                         <div className="nombre-tarj">
-                        <h2 className="label">Nombre</h2>
-                        <input type="text" name='tarjetaNombre' onChange={this.handleMetaChange}></input>
-                        <h2 className="label">Apellidos</h2>
-                        <input type="text" name='tarjetaApellidos' onChange={this.handleMetaChange}></input>
+                            <h2 className="label">Nombre</h2>
+                            <input className= "tarj-nom" type="text" name='tarjetaNombre' onChange={this.handleMetaChange}></input>
+                            <h2 className="label">Apellidos</h2>
+                            <input className= "tarj-nom" type="text" name='tarjetaApellidos' onChange={this.handleMetaChange}></input>
                         </div>
-
-                        <h2 className="label">Número de tarjeta</h2>
-                        <input type="text" name='tarjetaNum' placeholder="XXXX-XXXX-XXXX-XXXX"onChange={this.handleMetaChange}></input>
-
+                        <div className="numero-tarj">
+                            <h2 className="label">Número de tarjeta</h2>
+                            <input type="text" name='tarjetaNum' placeholder="XXXX-XXXX-XXXX-XXXX"onChange={this.handleMetaChange}></input>
+                        </div>
                         <div className="fecha-cvv">
                             <div>
                             <h2 className="label">Fecha de caducidad</h2>

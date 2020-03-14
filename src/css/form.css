@@ -1,6 +1,6 @@
 .container {
     width: 80%;
-    height: 700px;
+    height: 1000px;
     margin: auto;
     padding: 30px 15px 30px 15px;
     border-radius: 10px;
@@ -21,6 +21,11 @@
     align-self: center;
 }
 
+.label {
+    align-items: left;
+    margin-right: 50px;
+    text-align: left;
+}
 
 .container input[type= text] {
     width: 100%;
@@ -30,9 +35,25 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    height: 100%;
+}
+.container input[type= text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-right: 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100%;
 }
 
-.container input[type= tel ] {
+.container .tarj-nom {
+    margin-left: 25px;
+}
+
+.container input[type= tel] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -42,23 +63,24 @@
     box-sizing: border-box;
 }
 .container input[type= date ] {
-    width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px;
+    margin-right: 50px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 .container input[type= time ] {
-    width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px;
+    margin-right: 50px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
+
 .container input[type= month ] {
     width: 100%;
     padding: 12px 20px;
@@ -105,6 +127,8 @@
     grid-template-rows: 50px;
     grid-template-areas: 
     "ant bc sig";
+    position: relative;
+    bottom: 15px;
 }
 
 .boton-disabled {
@@ -184,28 +208,47 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .hor-wrapper {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
+    grid-template-areas: 
+    "day hora leg";
 }
 
 .nombre-tarj {
     display: flex;
+    
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    align-items: left;
+}
+.numero-tarj {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
 }
 .fecha-cvv {
     display: flex;
+    width: 50%;
     flex-direction: row;
     justify-content: space-between;
+    align-items: left;
 }
 .radio-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 /* Create a custom radio button */
