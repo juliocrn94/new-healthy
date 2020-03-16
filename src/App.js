@@ -1,6 +1,7 @@
 import React from 'react';
 import Description from "./components/Description";
 import Map from './components/Map';
+import Services2 from './components/Services2';
 import Testimonios from "./components/Testimonios";
 import Footer from './components/Footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -16,6 +17,7 @@ function App() {
       <div className="App">
         <Description/>
         <Map /> 
+        <Services2/>
         <Testimonios />
         <Footer />
       </div>
