@@ -229,7 +229,7 @@ class Formuser extends Component {
                     <div className= "confirma-wrapper">
                         <h1 className="form-title">¡Listo!</h1>
                         <h2 className="label">Tu cita ha sido agendada</h2>
-                        <h2 className="label">Te hemos enviado un correo de confirmación, por favor revisa tu bandeja de entrada.</h2>
+                        <h2 className="label">Te enviaremos un correo de confirmación, por favor revisa tu bandeja de entrada.</h2>
                     </div>
                 }
                 {/*zona de botones*/}
@@ -251,14 +251,18 @@ class Formuser extends Component {
                             <img src={bc3} className="bcs"/>
                             }
                             {this.state.display === 4 &&
-                            <img src={bc3} className="bcs-finales"/>
+                            <img src={bc3} className="bcs"/>
                             }
                         </div>
                         {this.state.display >= 1 && this.state.display <4 &&
                         <ButtonForm aligner="boton-sig" onClick={this.handleButton} text= "Siguiente" />
                         }
+
+                        {this.state.display === 4 && 
+                        <ButtonForm aligner="boton-disabled" onClick={this.handleButtonAnterior} text= "Anterior" />
+                        }
                         {this.state.display === 4 &&
-                        <ButtonForm aligner="boton-sig" onClick={this.handleButtonFinalizar} text="Finalizar" />
+                        <ButtonForm aligner="boton-fin" onClick={this.handleButtonFinalizar} text="Finalizar" />
                         }
                     </div>
                 
