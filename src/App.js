@@ -3,6 +3,7 @@ import Description from "./components/Description";
 import Map from './components/Map';
 import Services2 from './components/Services2';
 import Testimonios from "./components/Testimonios";
+import ProgressDashboard from "./components/ProgressDashboard"; 
 import Footer from './components/Footer';
 import Animacion from './components/Animacion';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -22,6 +23,7 @@ function App() {
         <Map /> 
         <Services2/>
         <Testimonios />
+        <ProgressDashboard />
         <Footer />
       </div>
     </Router>
