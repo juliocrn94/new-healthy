@@ -23,7 +23,6 @@ function App() {
         <Map /> 
         <Services2/>
         <Testimonios />
-        <ProgressDashboard />
         <Footer />
       </div>
     </Router>

@@ -8,10 +8,9 @@ ol, ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: grey;
+    background-color:  #e5a490;
     color: white;
-    height: 100px;
-    border-bottom: 2px solid grey;
+    height: 70px;
 }
 
 nav {
@@ -34,4 +33,14 @@ nav {
     align-items: center;
     height: inherit;
     padding: 0px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+
+}
+
+.logonav {
+    height: 50px;
+    margin-left: 50px;
 }

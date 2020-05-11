@@ -1,16 +1,18 @@
 import React from 'react';
 import "../css/services.css";
-import Nutriologo from "../images/iconServNutri.svg" 
-import Movil from "../images/iconServMovil.svg" 
-import Complement from "../images/iconServDieta.svg" 
-import Seguimiento from "../images/iconServSegui.svg" 
+import Nutriologo from "../images/nutri2.jpg" 
+import Movil from "../images/movil1.jpg" 
+import Complement from "../images/comple1.jpg" 
+import Seguimiento from "../images/segui1.jpg" 
+import Logo from "../images/logoHB-01.png"
 
 
 const Services2 = () => {
     return (
             <section className="seccion-servicios">
-                <div>
-                    <h1>Servicios</h1>   
+                <div className="encabezado-service">
+                    <h1>Servicios</h1>
+                    <img className="logo-service" src={Logo} alt="Healthy Break"/> 
                 </div>
                 <div className="alineacion-servicios">
                     <div className="servicio">  

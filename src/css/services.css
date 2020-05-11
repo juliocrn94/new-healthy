@@ -5,38 +5,48 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: montserrat;
 }
 
 
 .servicio h3 {
     margin-top: 0px;
     padding: 7px;
-    border-radius: 6px;
+    border-radius: 50px;
     /* width: 60%; */
     text-align: center;
     color: #fff;
-    background-color: orange;
+    background-color: #e59090;
+    font-weight: 600;
     z-index: 1;
 }
 
 .servicio img {
     margin-top: 0px;
-    margin-bottom: -20px;
+
     padding: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #50a9be;
 }
 
+
 .servicio p {
-    background-color: lightgrey;
-    padding: 15px;
-    border-radius: 30px;
+    background-color: rgba(224, 224, 224, 0.787);
+    padding: 40px 15px 15px 15px;
+    color: #146991;
     margin-top: -30px;
-    width: 70%;
+    width: 80%;
 }
 
 .alineacion-servicios {
     display: flex;
     flex-direction: row;
-    margin: 0px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.568);
+    height: 60%;
+    align-items: center;
 }
 
 .servicios-app {
@@ -48,9 +58,27 @@
 .seccion-servicios{
     display: flex;
     flex-direction: column;
+    background-image: url(../images/fondo3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
 }
 
 .seccion-servicios div h1{
-   text-align: center;
-   font-size: 4em;
+   text-align: left;
+   font-size: 5em;
+   font-weight: 800;
+   color: #ffffff;
+   margin: 20px 50px;
+}
+
+.encabezado-service {
+    display: flex;
+    justify-content: left;
+}
+
+.logo-service {
+    display: inline-block;
+    height: 100px;
+    margin: 20px 50px;
 }
